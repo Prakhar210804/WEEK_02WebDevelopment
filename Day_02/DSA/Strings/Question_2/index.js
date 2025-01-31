@@ -1,0 +1,11 @@
+function isPalindrome(str) {
+    // Your code here
+  for(let i = 0;i<=str.length;i++){
+  if(str.charAt(i)!=str.charAt(str.length-i-1)){
+  return false;
+  }
+  }
+  return true;
+  }
+  console.log(isPalindrome("madam"));  // Output: true
+  console.log(isPalindrome("hello"));
