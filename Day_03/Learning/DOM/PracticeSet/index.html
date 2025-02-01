@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        nav{
+            height: 50px;
+            width: 100vw;
+            background-color: pink;
+            padding: 5px;
+        }
+        ul li{
+            display: inline;
+            margin: 5px;
+            padding: 5px;
+        }
+        .child{
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class ="li">Home
+            </li>
+            <li class ="li">About us</li>
+            <li class ="li">service</li>
+            <li class ="li">contact</li>
+        </ul>
+    </nav>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+<div class="container">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+</div>
+
+    <script>
+        document.querySelector(".li").style.color = "red"
+
+        document.querySelectorAll(".li").forEach(e=>{
+            e.style.backgroundColor = "cyan"
+        })
+
+        document.body.firstElementChild.backgroundColor ="green"
+    </script>
+</body>
+</html>
